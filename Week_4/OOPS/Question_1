@@ -1,9 +1,7 @@
-// 1. Define the interface
 interface Test {
     int square(int num);
 }
 
-// 2. Implement the interface in the Arithmetic class
 class Arithmetic implements Test {
     @Override
     public int square(int num) {
@@ -11,7 +9,6 @@ class Arithmetic implements Test {
     }
 }
 
-// 3. Main class to test the implementation
 public class ToTestInt {
     public static void main(String[] args) {
         // Creating an object of the Arithmetic class
