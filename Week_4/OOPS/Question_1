@@ -1,0 +1,25 @@
+// 1. Define the interface
+interface Test {
+    int square(int num);
+}
+
+// 2. Implement the interface in the Arithmetic class
+class Arithmetic implements Test {
+    @Override
+    public int square(int num) {
+        return num * num;
+    }
+}
+
+// 3. Main class to test the implementation
+public class ToTestInt {
+    public static void main(String[] args) {
+        // Creating an object of the Arithmetic class
+        Arithmetic obj = new Arithmetic();
+        
+        int number = 5;
+        int result = obj.square(number);
+        
+        System.out.println("The square of " + number + " is: " + result);
+    }
+}
